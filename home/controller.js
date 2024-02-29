@@ -1,38 +1,16 @@
 function cardPPLG() {
     const container = document.createElement('div');
-    container.classList.add('d-flex', 'flex-row');
+    container.classList.add('d-flex', 'flex-row', 'flex-wrap', 'flex-md-nowrap');
 
-    const card1 = document.createElement('div');
-    card1.classList.add('card', 'p-2', 'mx-1');
-    const cardBody1 = document.createElement('div');
-    cardBody1.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody1.textContent = "X PPLG 1";
-    card1.appendChild(cardBody1);
-    container.appendChild(card1);
-
-    const card2 = document.createElement('div');
-    card2.classList.add('card', 'p-2', 'mx-1');
-    const cardBody2 = document.createElement('div');
-    cardBody2.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody2.textContent = "X PPLG 2";
-    card2.appendChild(cardBody2);
-    container.appendChild(card2);
-
-    const card3 = document.createElement('div');
-    card3.classList.add('card', 'p-2', 'mx-1');
-    const cardBody3 = document.createElement('div');
-    cardBody3.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody3.textContent = "X PPLG 3";
-    card3.appendChild(cardBody3);
-    container.appendChild(card3);
-
-    const card4 = document.createElement('div');
-    card4.classList.add('card', 'p-2', 'mx-1');
-    const cardBody4 = document.createElement('div');
-    cardBody4.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody4.textContent = "X PPLG 4";
-    card4.appendChild(cardBody4);
-    container.appendChild(card4);
+    for (let a = 1; a <= 4; a++) {
+        const card = document.createElement('div');
+        card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1', 'my-1');
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body', 'text-dark','text-class-addon');
+        cardBody.textContent = `X PPLG ${a}`;
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    }
 
     const parentElement = document.getElementById('parentContainer');
 
@@ -43,31 +21,17 @@ function cardPPLG() {
 
 function cardTJKT() {
     const container = document.createElement('div');
-    container.classList.add('d-flex', 'flex-row');
+    container.classList.add('d-flex', 'flex-row', 'flex-wrap', 'flex-md-nowrap');
 
-    const card1 = document.createElement('div');
-    card1.classList.add('card', 'p-2', 'mx-1');
-    const cardBody1 = document.createElement('div');
-    cardBody1.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody1.textContent = "X TJKT 1";
-    card1.appendChild(cardBody1);
-    container.appendChild(card1);
-
-    const card2 = document.createElement('div');
-    card2.classList.add('card', 'p-2', 'mx-1');
-    const cardBody2 = document.createElement('div');
-    cardBody2.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody2.textContent = "X TJKT 2";
-    card2.appendChild(cardBody2);
-    container.appendChild(card2);
-
-    const card3 = document.createElement('div');
-    card3.classList.add('card', 'p-2', 'mx-1');
-    const cardBody3 = document.createElement('div');
-    cardBody3.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody3.textContent = "X TJKT 3";
-    card3.appendChild(cardBody3);
-    container.appendChild(card3);
+    for (let a = 1; a <= 3; a++) {
+        const card = document.createElement('div');
+        card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1');
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body', 'text-dark','text-class-addon');
+        cardBody.textContent = `X TJKT ${a}`;
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    }
 
     const parentElement = document.getElementById('parentContainer');
 
@@ -78,31 +42,17 @@ function cardTJKT() {
 
 function cardANIMASI() {
     const container = document.createElement('div');
-    container.classList.add('d-flex', 'flex-row');
+    container.classList.add('d-flex', 'flex-row', 'flex-wrap', 'flex-md-nowrap');
 
-    const card1 = document.createElement('div');
-    card1.classList.add('card', 'p-2', 'mx-1');
-    const cardBody1 = document.createElement('div');
-    cardBody1.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody1.textContent = "X ANIMASI 1";
-    card1.appendChild(cardBody1);
-    container.appendChild(card1);
-
-    const card2 = document.createElement('div');
-    card2.classList.add('card', 'p-2', 'mx-1');
-    const cardBody2 = document.createElement('div');
-    cardBody2.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody2.textContent = "X ANIMASI 2";
-    card2.appendChild(cardBody2);
-    container.appendChild(card2);
-
-    const card3 = document.createElement('div');
-    card3.classList.add('card', 'p-2', 'mx-1');
-    const cardBody3 = document.createElement('div');
-    cardBody3.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody3.textContent = "X ANIMASI 3";
-    card3.appendChild(cardBody3);
-    container.appendChild(card3);
+    for (let a = 1; a <= 2; a++) {
+        const card = document.createElement('div');
+        card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1');
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body', 'text-dark','text-class-addon');
+        cardBody.textContent = `X ANIMASI ${a}`;
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    }
 
     const parentElement = document.getElementById('parentContainer');
 
@@ -113,23 +63,17 @@ function cardANIMASI() {
 
 function cardBRF() {
     const container = document.createElement('div');
-    container.classList.add('d-flex', 'flex-row');
+    container.classList.add('d-flex', 'flex-row', 'flex-wrap', 'flex-md-nowrap');
 
-    const card1 = document.createElement('div');
-    card1.classList.add('card', 'p-2', 'mx-1');
-    const cardBody1 = document.createElement('div');
-    cardBody1.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody1.textContent = "X BRF 1";
-    card1.appendChild(cardBody1);
-    container.appendChild(card1);
-
-    const card2 = document.createElement('div');
-    card2.classList.add('card', 'p-2', 'mx-1');
-    const cardBody2 = document.createElement('div');
-    cardBody2.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody2.textContent = "X BRF 2";
-    card2.appendChild(cardBody2);
-    container.appendChild(card2);
+    for (let a = 1; a <= 2; a++) {
+        const card = document.createElement('div');
+        card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1');
+        const cardBody = document.createElement('div');
+        cardBody.classList.add('card-body', 'text-dark','text-class-addon');
+        cardBody.textContent = `X BRF ${a}`;
+        card.appendChild(cardBody);
+        container.appendChild(card);
+    }
 
     const parentElement = document.getElementById('parentContainer');
 
@@ -140,15 +84,15 @@ function cardBRF() {
 
 function cardTE() {
     const container = document.createElement('div');
-    container.classList.add('d-flex', 'flex-row');
+    container.classList.add('d-flex', 'flex-row', 'flex-wrap', 'flex-md-nowrap');
 
-    const card1 = document.createElement('div');
-    card1.classList.add('card', 'p-2', 'mx-1');
-    const cardBody1 = document.createElement('div');
-    cardBody1.classList.add('card-body', 'text-dark','text-class-addon');
-    cardBody1.textContent = "X TE 1";
-    card1.appendChild(cardBody1);
-    container.appendChild(card1);
+    const card = document.createElement('div');
+    card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1');
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body', 'text-dark','text-class-addon');
+    cardBody.textContent = "X TE";
+    card.appendChild(cardBody);
+    container.appendChild(card);
 
     const parentElement = document.getElementById('parentContainer');
 
