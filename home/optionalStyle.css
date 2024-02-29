@@ -1,0 +1,78 @@
+.bg-grey-add {
+    background-color: #F7F7F7;
+}
+
+.bg-white-add {
+    background-color: #FFFFFF;
+}
+
+.bg-biruTB-add {
+    background-color: #0F6FC5;
+}
+
+
+
+.bg-blue-var-1 {
+    background-color: #CAF0F8;
+}
+
+.bg-blue-var-2 {
+    background-color: #90E0EF;
+}
+
+.bg-blue-var-3 {
+    background-color: #00B4D8;
+}
+
+.bg-blue-var-4 {
+    background-color: #0077B6;
+}
+
+.bg-blue-var-5 {
+    background-color: #0F6FC5;
+}
+
+.carousel {
+    width: 50vh;
+    margin: auto;
+}
+
+.carousel-item img {
+    width: 25vh;
+    height: auto;
+}
+
+#title-container {
+    height: 25vh;
+}
+
+#carousel-container {
+    height: 50vh;
+}
+
+.carousel-jurusan-addon {
+    width: 55vh;
+}
+
+#class-container {
+    height: 25vh;
+}
+
+.text-class-addon {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 500px){
+    .carousel {
+        width: 40vh;
+    }
+
+    .carousel-item img {
+        width: 20vh;
+    }
+
+    .text-class-addon {
+        font-size: 0.7rem;
+    }
+    
+}
