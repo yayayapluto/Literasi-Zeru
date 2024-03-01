@@ -5,11 +5,14 @@ function cardPPLG() {
     for (let a = 1; a <= 4; a++) {
         const card = document.createElement('div');
         card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1', 'my-1');
+        const linkTo = document.createElement('a')
+        linkTo.setAttribute('href', `../Kelas/PPLG/X_PPLG_${a}/index.html`)
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body', 'text-dark','text-class-addon');
         cardBody.textContent = `X PPLG ${a}`;
         card.appendChild(cardBody);
-        container.appendChild(card);
+        linkTo.appendChild(card)
+        container.appendChild(linkTo);
     }
 
     const parentElement = document.getElementById('parentContainer');
@@ -44,9 +47,9 @@ function cardANIMASI() {
     const container = document.createElement('div');
     container.classList.add('d-flex', 'flex-row', 'flex-wrap', 'flex-md-nowrap');
 
-    for (let a = 1; a <= 2; a++) {
+    for (let a = 1; a <= 3; a++) {
         const card = document.createElement('div');
-        card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1');
+        card.classList.add('card', 'p-2', 'mx-1', 'flex-grow-1', 'my-1', 'card-animasi');
         const cardBody = document.createElement('div');
         cardBody.classList.add('card-body', 'text-dark','text-class-addon');
         cardBody.textContent = `X ANIMASI ${a}`;
