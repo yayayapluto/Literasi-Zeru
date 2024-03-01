@@ -5,6 +5,7 @@ let listVideo = [
     "https://www.youtube.com/embed/7Ehl9EyM8ic?si=Pwb9f9nPQElDx0bn", //eps 4
     "https://www.youtube.com/embed/bCCCtpBVmVE?si=S4XyPXUlC7Ku-b-q", //eps 5
     "https://www.youtube.com/embed/ATeJ-HXwRtI?si=kWlLy-Hr1xwjGhds", //eps 6
+    "https://www.youtube.com/embed/ATeJ-HXwRtI?si=kWlLy-Hr1xwjGhds", //eps 6
 ];
 
 function appendCard(videoLink, n) {

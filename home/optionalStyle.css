@@ -59,7 +59,7 @@
     min-height: 30vh;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     .carousel {
         width: 40vh !important; /* Add !important to override existing styles */
         margin: 5vh !important;
